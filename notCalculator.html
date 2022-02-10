@@ -1,0 +1,67 @@
+
+    <!DOCTYPE html>
+<html>
+<head>
+    <script>
+        
+ 
+
+function Samazinat(){
+document.getElementById("timesClicked").value--;
+checkInp()
+   }
+
+
+
+function pALIELINAT(){
+document.getElementById("timesClicked").value++;
+checkInp();
+}
+
+
+function Samazinat(){
+    document.getElementById("TimesS").value++;
+    checkInp()
+       }
+    
+    
+    
+    function Palielinat(){
+    document.getElementById("TimesP").value++;
+    checkInp();
+    }
+
+function checkInp()
+{
+    let value = document.getElementById("timesClicked").value;
+
+    if (isNaN(value))
+    {
+        alert("Must input numbers");
+        return false;
+    }
+}
+let valu=document.getElementById("timesClicked").value;
+ 
+
+    </script>
+   
+</head>
+<body>
+    <button style="background-color: red;"type="button" class="btn btn-default" onclick="Samazinat(1)">Samazināt</button>
+        
+        <input  id="timesClicked" value="0"></input>
+ 
+    <button style="background-color:green;" type="button" class="btn btn-default" onclick="Palielinat(1)">Palielināt</button>
+    <p>Times clicked Samazinat</p>
+    <input  id="TimesS" value="0"></input>
+    <p>Times clicked Palielinat</p>
+    <input  id="TimesP" value="0"></input>
+   
+
+  
+
+
+
+</body>
+</html>
